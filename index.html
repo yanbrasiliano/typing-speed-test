@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="src/feature/typing.js" defer></script>
+  </head>
+  <body class="default">
+    <h1>Typing Speed Test</h1>
+    <p class="instructions">
+      To start the test, click on the text box below and start typing the text
+      displayed above it. The timer will start automatically as soon as you
+      start typing. When you finish typing the text correctly, the time it took
+      you will be displayed. If you make a mistake while typing, the timer will
+      not stop. You will have to type the text correctly to stop the timer.
+    </p>
+    <div id="text"></div>
+
+    <!-- <div id="alert hide">
+      <div id="alert-close">❌</div>
+      <div id="alert-icon">⚠️</div>
+      <div id="alert-message"></div>
+    </div> -->
+    <textarea
+      id="value"
+      cols="30"
+      rows="5"
+      placeholder="Click here to start typing"
+    ></textarea>
+
+    <div id="result"></div>
+    <div id="historic"></div>
+    <button id="restart">Restart</button>
+    <button id="theme">Dark</button>
+  </body>
+</html>

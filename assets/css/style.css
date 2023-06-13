@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.instructions {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+#text {
+  font-size: 1rem;
+  background-color: #f3f3f3;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+#value {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+#result {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+#time {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#speed {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #094381;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #207fe4;
+}
+
+#changeTheme {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+#alert {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 1rem;
+  width: 30%;
+  background-color: #e90303;
+  color: #fff;
+  border-radius: 5px;
+}
+hide {
+  display: none;
+}
+
+#alert-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+/* White  */
+.default {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Dark */
+.dark {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dark #text {
+  color: #333;
+}
