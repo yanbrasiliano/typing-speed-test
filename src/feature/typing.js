@@ -4,9 +4,6 @@ const restart = document.querySelector("#restart");
 const result = document.querySelector("#result");
 const historic = document.querySelector("#historic");
 const theme = document.querySelector("#theme");
-const alert = document.querySelector("#alert");
-const alertMessage = document.querySelector("#alert-message");
-const alertClose = document.querySelector("#alert-close");
 
 const texts = [
   "Example text to type",
@@ -39,7 +36,9 @@ function start() {
 function verify() {
   const end = new Date().getTime();
   const spent = (end - parseInt(localStorage.getItem("start"))) / 1000;
-  result.textContent = `Congratulations! You took ${spent.toFixed(2)} seconds.`;
+  result.textContent = `Congratulations! You took ${spent.toPrecision(
+    2
+  )} seconds.`;
 
   addHistoric(text.textContent, spent);
   setProgressTest(false);
@@ -83,21 +82,10 @@ function changeTheme() {
 }
 
 function close() {
+  console.log("close");
   alert.classList.add("hide");
 }
 
-// areaText.addEventListener("keydown", (event) => {
-//   if (event.keyCode === 13) {
-//     const { value } = areaText;
-//     if (!texts.includes(value)) {
-//       // alert.classList.remove("hide");
-//       // alertMessage.textContent = "You typed wrong, try again.";
-//     } else {
-//       update();
-//     }
-//   }
-// });
-// alertClose.addEventListener("click", () => close());
 areaText.addEventListener("keyup", () => update());
 restart.addEventListener("click", () => restartGame());
 theme.addEventListener("click", () => changeTheme());
